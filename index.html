@@ -1,0 +1,1362 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Voice of Silence — videojuego narrativo ambientado en El Alto, Bolivia."
+    >
+
+    <title>Voice of Silence</title>
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="clickStars" aria-hidden="true"></div>
+
+
+    <header class="main-navigation">
+
+        <a href="#home" class="nav-logo">
+            <span>VOICE</span>
+            <strong>OF SILENCE</strong>
+        </a>
+
+
+        <nav class="nav-menu">
+
+            <a href="#home">INICIO</a>
+
+            <a href="#trailer">TRÁILER</a>
+
+            <a href="#synopsis">SINOPSIS</a>
+
+            <a href="#characters">PERSONAJES</a>
+
+            <a href="#gallery">GALERÍA</a>
+
+            <a href="#information">INFORMACIÓN</a>
+
+            <a href="#download">JUGAR</a>
+
+        </nav>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Abrir menú"
+        >
+            ☰
+        </button>
+
+    </header>
+
+    <main>
+
+
+        <section id="home" class="home-section">
+
+
+            <!-- FONDO -->
+
+            <div class="home-background">
+
+                <div class="gradient-orb orb-purple"></div>
+
+                <div class="gradient-orb orb-pink"></div>
+
+                <div class="gradient-orb orb-blue"></div>
+
+                <div class="gradient-orb orb-cyan"></div>
+
+
+                <div class="abstract-shape shape-one"></div>
+
+                <div class="abstract-shape shape-two"></div>
+
+                <div class="abstract-shape shape-three"></div>
+
+                <div class="abstract-shape shape-four"></div>
+
+
+                <div class="dot-pattern"></div>
+
+            </div>
+
+
+
+            
+
+            <div class="home-interface" id="homeInterface">
+
+
+                <!-- PARTE SUPERIOR -->
+
+                <div class="home-topbar">
+
+                    <div class="home-project">
+
+                        <span>
+                            VIDEO GAME
+                        </span>
+
+                        <strong>
+                            VOICE OF SILENCE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="home-status">
+
+                        <span class="status-dot"></span>
+
+                        <span>
+                            ONLINE
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="home-character">
+
+                    <div class="character-light"></div>
+
+                    <div class="character-ring ring-one"></div>
+
+                    <div class="character-ring ring-two"></div>
+
+
+                    <img
+                        src="gallery/maeowapo.png"
+                        alt="Mateo, protagonista de Voice of Silence"
+                        id="homeMateo"
+                    >
+
+
+                    <div class="floating-element floating-star-one">
+                        ✦
+                    </div>
+
+                    <div class="floating-element floating-star-two">
+                        ✧
+                    </div>
+
+                    <div class="floating-element floating-star-three">
+                        +
+                    </div>
+
+                </div>
+
+
+
+               
+
+                <div class="home-title">
+
+                    <span>
+                        A STORY FROM
+                    </span>
+
+                    <h1>
+                        VOICE
+                    </h1>
+
+                    <h1>
+                        OF SILENCE
+                    </h1>
+
+
+                    <p>
+                        Una historia de decisiones,
+                        consecuencias y voces que
+                        permanecen en silencio.
+                    </p>
+
+
+                    <button
+                        id="startButton"
+                        class="start-button"
+                        type="button"
+                    >
+
+                        <span>
+                            ▶
+                        </span>
+
+                        COMENZAR
+
+                        <strong>
+                            →
+                        </strong>
+
+                    </button>
+
+                </div>
+
+
+
+                
+
+                <aside class="home-panel">
+
+
+                    <div class="panel-title">
+
+                        <span>
+                            ✦
+                        </span>
+
+                        <strong>
+                            VOICE OF SILENCE
+                        </strong>
+
+                    </div>
+
+
+
+                    <button
+                        class="home-panel-item active"
+                        data-target="trailer"
+                        type="button"
+                    >
+
+                        <span class="item-number">
+                            01
+                        </span>
+
+                        <span class="item-content">
+
+                            <small>
+                                WATCH
+                            </small>
+
+                            <strong>
+                                TRÁILER
+                            </strong>
+
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="home-panel-item"
+                        data-target="synopsis"
+                        type="button"
+                    >
+
+                        <span class="item-number">
+                            02
+                        </span>
+
+                        <span class="item-content">
+
+                            <small>
+                                DISCOVER
+                            </small>
+
+                            <strong>
+                                SINOPSIS
+                            </strong>
+
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="home-panel-item"
+                        data-target="characters"
+                        type="button"
+                    >
+
+                        <span class="item-number">
+                            03
+                        </span>
+
+                        <span class="item-content">
+
+                            <small>
+                                MEET
+                            </small>
+
+                            <strong>
+                                PERSONAJES
+                            </strong>
+
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="home-panel-item"
+                        data-target="gallery"
+                        type="button"
+                    >
+
+                        <span class="item-number">
+                            04
+                        </span>
+
+                        <span class="item-content">
+
+                            <small>
+                                EXPLORE
+                            </small>
+
+                            <strong>
+                                GALERÍA
+                            </strong>
+
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="home-panel-item"
+                        data-target="information"
+                        type="button"
+                    >
+
+                        <span class="item-number">
+                            05
+                        </span>
+
+                        <span class="item-content">
+
+                            <small>
+                                LEARN
+                            </small>
+
+                            <strong>
+                                INFORMACIÓN
+                            </strong>
+
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+
+                    <button
+                        class="home-panel-item download-item"
+                        data-target="download"
+                        type="button"
+                    >
+
+                        <span class="item-number">
+                            ↓
+                        </span>
+
+                        <span class="item-content">
+
+                            <small>
+                                GET THE GAME
+                            </small>
+
+                            <strong>
+                                JUGAR
+                            </strong>
+
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+                </aside>
+
+
+
+                
+
+                <div class="home-bottom">
+
+                    <span>
+                        EL ALTO
+                    </span>
+
+                    <span>
+                        /
+                    </span>
+
+                    <span>
+                        BOLIVIA
+                    </span>
+
+
+                    <div class="bottom-line"></div>
+
+
+                    <span>
+                        VOS
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             TRÁILER
+             ====================================================== -->
+
+        <section id="trailer" class="content-section trailer-section">
+
+
+            <div class="section-header">
+
+                <span>
+                    VOICE OF SILENCE
+                </span>
+
+                <h2>
+                    TRÁILER
+                </h2>
+
+                <p>
+                    Mira un adelanto de la historia y del mundo
+                    de Voice of Silence.
+                </p>
+
+            </div>
+
+
+            <div class="trailer-wrapper">
+
+                <div class="trailer-screen">
+
+                    <video
+                        id="gameTrailer"
+                        controls
+                        preload="metadata"
+                        poster="gallery/inicio.jpg"
+                        playsinline
+                    >
+
+                        <source
+                            src="video/trailer.mp4"
+                            type="video/mp4"
+                        >
+
+                        Tu navegador no puede reproducir este video.
+
+                    </video>
+
+
+                    <div class="trailer-overlay">
+
+                        <span>
+                            VOICE OF SILENCE
+                        </span>
+
+                        <strong>
+                            TRÁILER
+                        </strong>
+
+                        <button
+                            id="trailerPlayButton"
+                            type="button"
+                        >
+                            ▶
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             SINOPSIS
+             ====================================================== -->
+
+        <section id="synopsis" class="content-section synopsis-section">
+
+
+            <div class="section-header">
+
+                <span>
+                    THE STORY
+                </span>
+
+                <h2>
+                    SINOPSIS
+                </h2>
+
+            </div>
+
+
+            <div class="synopsis-layout">
+
+
+                <div class="synopsis-image">
+
+                    <img
+                        src="gallery/marquito.png"
+                        alt="Marco"
+                    >
+
+                </div>
+
+
+                <div class="synopsis-text">
+
+                    <span>
+                        VOICE OF SILENCE
+                    </span>
+
+                    <h3>
+                        Una historia que
+                        comienza en El Alto.
+                    </h3>
+
+
+                    <p>
+                        Voice of Silence es una novela visual
+                        ambientada en El Alto, Bolivia, que
+                        presenta la historia de Mateo y las
+                        situaciones que transforman su vida.
+                    </p>
+
+
+                    <p>
+                        La historia explora la vulnerabilidad,
+                        las decisiones, las relaciones familiares
+                        y las consecuencias que pueden surgir
+                        cuando una persona se encuentra en una
+                        situación difícil.
+                    </p>
+
+
+                    <p>
+                        Las decisiones del jugador pueden conducir
+                        a diferentes caminos y finales.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             PERSONAJES
+             ====================================================== -->
+
+        <section id="characters" class="content-section characters-section">
+
+
+            <div class="section-header">
+
+                <span>
+                    MEET THE CHARACTERS
+                </span>
+
+                <h2>
+                    PERSONAJES
+                </h2>
+
+                <p>
+                    Conoce a las personas que forman parte
+                    de la historia.
+                </p>
+
+            </div>
+
+
+            <div class="characters-slider">
+
+
+                <!-- MATEO -->
+
+                <article
+                    class="character-card"
+                    data-character="mateo"
+                >
+
+                    <div class="character-card-image">
+
+                        <img
+                            src="characters/mateowapito.png"
+                            alt="Mateo"
+                        >
+
+                    </div>
+
+
+                    <div class="character-card-name">
+
+                        <small>
+                            HAZ CLIC PARA CONOCERLO
+                        </small>
+
+                        <small>
+                            PROTAGONISTA
+                        </small>
+
+                        <h3>
+                            MATEO
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MARCO -->
+
+                <article
+                    class="character-card"
+                    data-character="marco"
+                >
+
+                    <div class="character-card-image">
+
+                        <img
+                            src="characters/marco.png"
+                            alt="Marco"
+                        >
+
+                    </div>
+
+
+                    <div class="character-card-name">
+
+                        <small>
+                            HAZ CLIC PARA CONOCERLO
+                        </small>
+
+                        <small>
+                            PERSONAJE
+                        </small>
+
+                        <h3>
+                            MARCO
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DANIELA -->
+
+                <article
+                    class="character-card"
+                    data-character="daniela"
+                >
+
+                    <div class="character-card-image">
+
+                        <img
+                            src="characters/mama.png"
+                            alt="Daniela"
+                        >
+
+                    </div>
+
+
+                    <div class="character-card-name">
+
+                        <small>
+                            HAZ CLIC PARA CONOCERLO
+                        </small>
+
+                        <small>
+                            PERSONAJE
+                        </small>
+
+                        <h3>
+                            DANIELA
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ALICIA -->
+
+                <article
+                    class="character-card"
+                    data-character="alicia"
+                >
+
+                    <div class="character-card-image">
+
+                        <img
+                            src="characters/alicia.png"
+                            alt="Alicia"
+                        >
+
+                    </div>
+
+
+                    <div class="character-card-name">
+
+                        <small>
+                            HAZ CLIC PARA CONOCERLO
+                        </small>
+
+                        <small>
+                            PERSONAJE
+                        </small>
+
+                        <h3>
+                            ALICIA
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ÓSCAR -->
+
+                <article
+                    class="character-card"
+                    data-character="oscar"
+                >
+
+                    <div class="character-card-image">
+
+                        <img
+                            src="characters/viejitouwu.png"
+                            alt="Óscar"
+                        >
+
+                    </div>
+
+
+                    <div class="character-card-name">
+
+                        <small>
+                            HAZ CLIC PARA CONOCERLO
+                        </small>
+
+                        <small>
+                            PERSONAJE
+                        </small>
+
+                        <h3>
+                            ÓSCAR
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             GALERÍA
+             ====================================================== -->
+
+        <section id="gallery" class="content-section gallery-section">
+
+
+            <div class="section-header">
+
+                <span>
+                    VISUAL COLLECTION
+                </span>
+
+                <h2>
+                    GALERÍA
+                </h2>
+
+                <p>
+                    Imágenes, escenarios, ilustraciones y momentos
+                    del desarrollo del proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+
+                <button
+                    class="gallery-item gallery-large"
+                    data-image="img/gallery-1.png"
+                    type="button"
+                >
+
+                    <img
+                        src="gallery/fondo uwu (1).jpg"
+                        alt="Escena de Voice of Silence"
+                    >
+
+                </button>
+
+
+                <button
+                    class="gallery-item"
+                    data-image="img/gallery-2.png"
+                    type="button"
+                >
+
+                    <img
+                        src="gallery/inicio.jpg"
+                        alt="Arte de Voice of Silence"
+                    >
+
+                </button>
+
+
+                <button
+                    class="gallery-item"
+                    data-image="img/gallery-3.png"
+                    type="button"
+                >
+
+                    <img
+                        src="gallery/hogar.jpg"
+                        alt="Escenario de Voice of Silence"
+                    >
+
+                </button>
+
+
+                <button
+                    class="gallery-item"
+                    data-image="img/gallery-4.png"
+                    type="button"
+                >
+
+                    <img
+                        src="gallery/Ceja.jpg"
+                        alt="Personaje de Voice of Silence"
+                    >
+
+                </button>
+
+
+                <button
+                    class="gallery-item"
+                    data-image="img/gallery-5.png"
+                    type="button"
+                >
+
+                    <img
+                        src="gallery/alejandro jugando.png"
+                        alt="Gameplay de Voice of Silence"
+                    >
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             INFORMACIÓN DEL PROYECTO
+             ====================================================== -->
+
+        <section id="information" class="content-section information-section">
+
+
+            <div class="section-header">
+
+                <span>
+                    ABOUT THE PROJECT
+                </span>
+
+                <h2>
+                    INFORMACIÓN
+                </h2>
+
+                <p>
+                    Conoce el proyecto y los temas relacionados
+                    con la realidad que inspira su historia.
+                </p>
+
+            </div>
+
+
+
+            <div class="information-grid">
+
+
+                <!-- SOBRE EL PROYECTO -->
+
+                <article class="information-card">
+
+                    <span>
+                        SOBRE EL JUEGO
+                    </span>
+
+                    <h3>
+                        Voice of Silence
+                    </h3>
+
+                    <p>
+                        Información sobre el concepto,
+                        desarrollo, género y objetivos
+                        del videojuego.
+                    </p>
+
+                    <button
+                        class="information-button"
+                        data-info="project"
+                        type="button"
+                    >
+                        LEER MÁS →
+                    </button>
+
+                </article>
+
+
+
+                <!-- EL ALTO -->
+
+                <article class="information-card featured">
+
+                    <span>
+                        CONTEXTO
+                    </span>
+
+                    <h3>
+                        EL ALTO
+                    </h3>
+
+                    <p>
+                        Conoce el contexto social y territorial
+                        de El Alto y su relación con la historia
+                        del videojuego.
+                    </p>
+
+                    <button
+                        class="information-button"
+                        data-info="el-alto"
+                        type="button"
+                    >
+                        CONOCER MÁS →
+                    </button>
+
+                </article>
+
+
+
+                <!-- PREVENCIÓN -->
+
+                <article class="information-card">
+
+                    <span>
+                        ORIENTACIÓN
+                    </span>
+
+                    <h3>
+                        PREVENCIÓN Y AYUDA
+                    </h3>
+
+                    <p>
+                        Información para adolescentes,
+                        familias y personas que atraviesan
+                        situaciones de vulnerabilidad.
+                    </p>
+
+                    <button
+                        class="information-button"
+                        data-info="prevention"
+                        type="button"
+                    >
+                        VER INFORMACIÓN →
+                    </button>
+
+                </article>
+
+
+
+                <!-- DERECHOS -->
+
+                <article class="information-card">
+
+                    <span>
+                        DERECHOS
+                    </span>
+
+                    <h3>
+                        CONSENTIMIENTO Y ATENCIÓN
+                    </h3>
+
+                    <p>
+                        Información sobre decisiones familiares,
+                        atención profesional y derechos de las
+                        personas que reciben atención.
+                    </p>
+
+                    <button
+                        class="information-button"
+                        data-info="rights"
+                        type="button"
+                    >
+                        CONOCER MÁS →
+                    </button>
+
+                </article>
+
+
+
+                <!-- CENTROS -->
+
+                <article class="information-card">
+
+                    <span>
+                        RECURSOS
+                    </span>
+
+                    <h3>
+                        CENTROS DE APOYO
+                    </h3>
+
+                    <p>
+                        Directorio de instituciones y servicios
+                        de apoyo disponibles en Bolivia,
+                        incluyendo La Paz y El Alto.
+                    </p>
+
+                    <button
+                        class="information-button"
+                        data-info="centers"
+                        type="button"
+                    >
+                        VER CENTROS →
+                    </button>
+
+                </article>
+
+
+
+                <!-- ADOLESCENTES Y FAMILIA -->
+
+                <article class="information-card">
+
+                    <span>
+                        ACOMPAÑAMIENTO
+                    </span>
+
+                    <h3>
+                        FAMILIA Y ADOLESCENTES
+                    </h3>
+
+                    <p>
+                        Orientación sobre cómo acompañar a un
+                        adolescente o familiar que atraviesa
+                        una situación difícil.
+                    </p>
+
+                    <button
+                        class="information-button"
+                        data-info="family"
+                        type="button"
+                    >
+                        LEER MÁS →
+                    </button>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             DESCARGA
+             ====================================================== -->
+
+        <section id="download" class="download-section">
+
+
+            <div class="download-background">
+
+                <div class="download-orb"></div>
+
+            </div>
+
+
+            <div class="download-content">
+
+                <span>
+                    READY TO PLAY?
+                </span>
+
+                <h2>
+                    VOICE OF SILENCE
+                </h2>
+
+                <p>
+                    Ingresa al enlace del videojuego
+                    y descubre la historia.
+                </p>
+
+
+                <a
+                    href="https://vocesdelsilencio.itch.io/voice-of-silence"
+                    id="downloadButton"
+                    class="download-button"
+                >
+
+                    <span>
+                        ↓
+                    </span>
+
+                    INGRESAR ENLACE
+
+                </a>
+
+
+                <small>
+                    BETA VERSION · WINDOWS
+                </small>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ======================================================
+         MODAL DE PERSONAJES
+         ====================================================== -->
+
+    <div
+        id="characterModal"
+        class="modal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+
+        <div class="character-modal-content">
+
+
+            <button
+                class="modal-close"
+                id="characterModalClose"
+                type="button"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-character-image">
+
+                <img
+                    id="modalCharacterImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="modal-character-info">
+
+                <span id="modalCharacterRole">
+                    PERSONAJE
+                </span>
+
+                <h2 id="modalCharacterName">
+                    MATEO
+                </h2>
+
+                <p id="modalCharacterDescription">
+                </p>
+
+
+                <div class="character-meaning">
+
+                    <strong>
+                        SIGNIFICADO EN LA HISTORIA
+                    </strong>
+
+                    <p id="modalCharacterMeaning">
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ======================================================
+         MODAL DE GALERÍA
+         ====================================================== -->
+
+    <div
+        id="galleryModal"
+        class="modal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+
+        <div class="gallery-modal-content">
+
+            <button
+                id="galleryModalClose"
+                class="modal-close"
+                type="button"
+            >
+                ×
+            </button>
+
+
+            <img
+                id="galleryModalImage"
+                src=""
+                alt="Imagen de la galería"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ======================================================
+         MODAL DE INFORMACIÓN
+         ====================================================== -->
+
+    <div
+        id="informationModal"
+        class="modal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+
+        <div class="information-modal-content">
+
+            <button
+                id="informationModalClose"
+                class="modal-close"
+                type="button"
+            >
+                ×
+            </button>
+
+
+            <span id="informationModalCategory">
+                INFORMACIÓN
+            </span>
+
+
+            <h2 id="informationModalTitle">
+                Información
+            </h2>
+
+
+            <div id="informationModalText">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ======================================================
+         JAVASCRIPT
+         ====================================================== -->
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="audio/ambience.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" class="music-button" type="button" aria-label="Activar o pausar música">
+        ♪ <span>MÚSICA OFF</span>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
